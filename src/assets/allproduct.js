@@ -1,54 +1,41 @@
 
 
-// @ts-ignore
 import p1_img from '../assets/women1.jfif'
-// @ts-ignore
 import p2_img from '../assets/men1.webp'
-// @ts-ignore
 import p3_img from '../assets/women2.jpg'
-// @ts-ignore
 import p4_img from '../assets/men2.jpg'
-// @ts-ignore
 import p5_img from '../assets/men3.webp'
-// @ts-ignore
 import p6_img from '../assets/women3.jpg'
-// @ts-ignore
 import p7_img from '../assets/men4.jfif'
-// @ts-ignore
 import p8_img from '../assets/women4.webp'
-// @ts-ignore
 import p9_img from '../assets/men5.webp'
-// @ts-ignore
 import p10_img from '../assets/women5.webp'
-// @ts-ignore
 import p11_img from '../assets/men6.webp'
-// @ts-ignore
 import p12_img from '../assets/women6.webp'
-// @ts-ignore
 import p13_img from '../assets/men7.jfif'
-// @ts-ignore
 import p14_img from '../assets/women7.webp'
-// @ts-ignore
 import p15_img from '../assets/men8.jpg'
-// @ts-ignore
 import p16_img from '../assets/women8.jfif'
-
-// @ts-ignore
+// import p17_img from '../assets/p1.jpg'
+// import p18_img from '../assets/p1.jpg'
+// import p19_img from '../assets/p1.jpg'
+// import p20_img from '../assets/p1.jpg'
 import p21_img from '../assets/kid1.jpg'
-// @ts-ignore
+// import p22_img from '../assets/p1.jpg'
 import p23_img from '../assets/kid2.jfif'
-// @ts-ignore
+// import p24_img from '../assets/p1.jpg'
 import p25_img from '../assets/kid3.jfif'
-// @ts-ignore
+// import p26_img from '../assets/p1.jpg'
 import p27_img from '../assets/kid4.webp'
-// @ts-ignore
+// import p28_img from '../assets/p1.jpg'
 import p29_img from '../assets/kid5.jfif'
-// @ts-ignore
+// import p30_img from '../assets/p1.jpg'
 import p31_img from '../assets/kid6.jfif'
-// @ts-ignore
+// import p32_img from '../assets/p1.jpg'
 import p33_img from '../assets/kid7.webp'
-// @ts-ignore
+// import p34_img from '../assets/p1.jpg'
 import p35_img from '../assets/kid8.jfif'
+// import p36_img from '../assets/p1.jpg'
 let all_product = [
     {
         id: 1,

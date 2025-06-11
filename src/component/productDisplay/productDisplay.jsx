@@ -4,7 +4,7 @@ import star_icon from '../../assets/star_icon.png'
 const ProductDisplay = (props) => {
     const {product}=props;
   return (
-    <div className='w-314 h-auto flex gap-5 text-black ml-10'>
+    <div className='w-303  h-auto flex gap-5 text-black ml-10'>
       <div className='flex gap-10'>
         <div className='flex flex-col gap-3'>
             <img src={product.image} className='w-20 h-28'/>
@@ -41,17 +41,23 @@ const ProductDisplay = (props) => {
 
      <div className='flex flex-col gap-4'>
         <p className='text-xl'>Select size</p>
-       <div className='flex gap-4'> <button className='w-8 h-8 border-2 hover:bg-gray-300 rounded-lg'>S</button>
-        <button className='w-8 h-8 border-2 hover:bg-gray-300 rounded-lg '>M</button>
-        <button className='w-8 h-8 border-2 hover:bg-gray-300 rounded-lg'>L</button>
-        <button className='w-8 h-8 border-2 hover:bg-gray-300 rounded-lg'>XL</button>
-        <button className='w-8 h-8 border-2 hover:bg-gray-300 rounded-lg'>XXL</button>
+       <div className='flex gap-4'> <button className='w-8 h-8 border-1 hover:bg-gray-300 rounded-lg'>S</button>
+        <button className='w-8 h-8 border-1 hover:bg-gray-300 rounded-lg '>M</button>
+        <button className='w-8 h-8 border-1 hover:bg-gray-300 rounded-lg'>L</button>
+        <button className='w-8 h-8 border-1 hover:bg-gray-300 rounded-lg'>XL</button>
+        <button className='w-8 h-8 border-1 hover:bg-gray-300 rounded-lg'>XXL</button>
     
         </div>
      </div>
 
      <button className='h-10 w-80 bg-red-400 rounded-lg mt-4 hover:bg-red-700'>Add to cart</button>
+
+      <div className='font-semibold'>
+       <p> Category : Women , T-Shirt , Crop top</p>
+       <p>Tags : Modern , Latest , Trend Shorts</p>
       </div>
+      </div>
+
     </div>
   )
 }
