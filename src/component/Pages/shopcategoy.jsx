@@ -5,7 +5,7 @@ import Item from '../item_copy1'
 const Shopcategoy = (props) => {
   const {all_product} =useContext(Shopcontext)
   return (
-<div className='h-200 w-320 pb-390 flex flex-col items-center'>
+<div className='h-200 w-314 pb-390 flex flex-col items-center'>
   <div className=' bg-gradient-to-tr from-green-400 to-gray-400 w-full  flex justify-center'>
       <img src={props.banner} className='w-250' />
     </div>

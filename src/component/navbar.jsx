@@ -9,7 +9,7 @@ import { GiShoppingCart } from "react-icons/gi";
 const Navbar = () => {
   const[menu,Setmenu]=useState("menu")
   return (
-    <div className=' w-318 h-20 bg-black text-white flex justify-center gap-70 items-center cursor-pointer ' >
+    <div className=' w-314 h-20 bg-black text-white flex justify-center gap-70 items-center cursor-pointer ' >
       <div className='flex items-center gap-5'>
         <img src={logo} className='w-20 bg-black h-15'/>
         <p className='font-bold'>shopshine</p>

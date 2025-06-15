@@ -1,8 +1,11 @@
-import React from 'react'
+import React ,{useContext}from 'react'
 import star_icon from '../../assets/star_icon.png'
+import{ Shopcontext} from '../../component/shopcontext'
 
 const ProductDisplay = (props) => {
     const {product}=props;
+    const { addtoCart}= useContext(Shopcontext);
+   
   return (
     <div className='w-303  h-auto flex gap-5 text-black ml-10'>
       <div className='flex gap-10'>
@@ -50,7 +53,7 @@ const ProductDisplay = (props) => {
         </div>
      </div>
 
-     <button className='h-10 w-80 bg-red-400 rounded-lg mt-4 hover:bg-red-700'>Add to cart</button>
+     <button className='h-10 w-80 bg-red-400 rounded-lg mt-4 hover:bg-red-700' onClick={()=>{addtoCart(product.id)}}>Add to cart</button>
 
       <div className='font-semibold'>
        <p> Category : Women , T-Shirt , Crop top</p>

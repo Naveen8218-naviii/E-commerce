@@ -9,7 +9,7 @@ import { LuTwitter } from "react-icons/lu";
 const Footer = () => {
   return (
     <>  
-    <div className='flex justify-center items-center flex-col w-315 gap-10  h-100 w-100 relative bg-gradient-to-br from-stone-700 to-stone-100'>
+    <div className='flex justify-center items-center flex-col w-314 gap-10  h-100 w-100 relative bg-gradient-to-br from-stone-700 to-stone-100'>
       <div className='flex justify-center items-center '>
       <img src={logo} className='w-20 bg-black h-15'/>
       <h1 className='text-3xl font-bold'>ShopShine</h1>

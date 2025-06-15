@@ -5,7 +5,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import Man from '../../assets/man.png'
 const Hero = () => {
   return (
-    <div className='bg-gradient-to-t from-inherit to-teal-300 to-lime-100 w-319 h-120 flex justify-center  items-center'>
+    <div className='bg-gradient-to-t from-inherit to-teal-300 to-lime-100 w-314 h-120 flex justify-center  items-center'>
       <div className='flex flex-col gap-4'>
         <h1 className='text-black text-4xl font-extrabold'>Best deal ! Best prices !</h1>
     
