@@ -13,6 +13,8 @@ const getDefaultCart = () =>{
       
       return  cart;
     }
+
+  
       
 const ShopcontextPro = (props) => {
 
@@ -31,7 +33,31 @@ console.log(cartItems);
 setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
 
     }
-const contextValue={all_product , cartItems , addtoCart , removetoCart}
+
+    const getTotalamt=()=>{
+      let totalAmt=0;
+      for(const item in cartItems){
+      if (cartItems[item]>0) {
+        let iteminfo=all_product.find((product)=>
+          product.id===Number(item))
+        
+      totalAmt += iteminfo.new_price*cartItems[item];
+            }
+    }  
+  return totalAmt;
+  }
+
+    const getTotalCart=()=>{
+     let  totalCart=0
+      for(const item in cartItems){
+        if (cartItems[item]>0) {
+          totalCart+=cartItems[item]
+        }
+      
+      }
+      return totalCart;
+    }
+const contextValue={all_product , cartItems , addtoCart , removetoCart ,getTotalamt , getTotalCart}
     
       return (
    
