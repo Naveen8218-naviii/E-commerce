@@ -14,14 +14,15 @@ const Navbar = () => {
   return (
     <div className=' w-full h-auto bg-black text-white grid md:flex justify-center md:gap-40 gap-10 items-center cursor-pointer px-4 py-5' >
       <div className='flex items-center gap-6 '>
+        <div className='flex justify-center items-center gap-1'>
         <img src={logo} className='w-10 bg-black h-8 md:w-15 md:h-10'/>
         <p className='font-bold text-3xl md:text-xl'>shopshine</p>
-
+</div>
                
-                  <div className=' md:hidden flex items-center gap-5'>
+                  <div className=' md:hidden flex items-center gap-3'>
            <Link to={"/login"}> <button className='bg-green-500 w-15 h-8 rounded-lg'> Login</button></Link>
            <div className='relative'>
-            <p className='absolute -right-2 -top-2 w-6 rounded-full h-5 flex justify-center items-center font-semibold bg-red-500 text-white'> {getTotalCart()}</p> 
+            <p className='absolute -right-2 -top-2 w-4 rounded-full h-3 flex justify-center items-center font-semibold bg-red-500 text-white'> {getTotalCart()}</p> 
           <Link to={"/cart"}>  <GiShoppingCart className='w-10 bg-black h-10' /></Link>
           
             </div>
