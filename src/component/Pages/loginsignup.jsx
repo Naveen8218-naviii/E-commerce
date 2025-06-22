@@ -3,7 +3,7 @@ import log from '../../assets/login.webp'
 
 const Loginsignup = () => {
   return (
-    <div className=' h-130  p-10' style={{ backgroundImage: `url(${log})`, width:`214vh` }}>
+    <div className=' h-130  p-10' style={{ backgroundImage: `url(${log})` }}>
       <div  className='w-100  h-100 border-2 flex ml-90 flex-col justify-center items-center gap-8  text-white rounded-xl hover:scale-105 '>
           <h1 className='mr-25 font-bold text-2xl'>Sign Up</h1>
 
