@@ -15,7 +15,11 @@ import kidsbanner from './assets/kids_banner.jpg'
 
 const App = () => {
   return (
+<<<<<<< HEAD
     <div className='w-full'>
+=======
+    <div className=' bg-black h-10 w-10 text-blue-900'>
+>>>>>>> f7a469e5b7391d9c7c89314380b17b6091dc2665
       <BrowserRouter>
       <Navbar />
       <Routes>

@@ -7,7 +7,11 @@ const ProductDisplay = (props) => {
     const { addtoCart}= useContext(Shopcontext);
    
   return (
+<<<<<<< HEAD
     <div className='w-full  h-auto flex gap-5 text-black ml-10'>
+=======
+    <div className='w-303  h-auto flex gap-5 text-black ml-10'>
+>>>>>>> f7a469e5b7391d9c7c89314380b17b6091dc2665
       <div className='flex gap-10'>
         <div className='flex flex-col gap-3'>
             <img src={product.image} className='w-20 h-28'/>

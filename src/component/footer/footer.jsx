@@ -9,10 +9,17 @@ import { LuTwitter } from "react-icons/lu";
 const Footer = () => {
   return (
     <>  
+<<<<<<< HEAD
     <div className='flex justify-center items-center flex-col w-full gap-10  h-auto w-100 relative bg-gradient-to-br from-stone-700 to-stone-100'>
       <div className='flex justify-center items-center mt-15'>
       <img src={logo} className='w-20 bg-black h-15'/>
       <h1 className='text-3xl font-bold '>ShopShine</h1>
+=======
+    <div className='flex justify-center items-center flex-col w-314 gap-10  h-100 w-100 relative bg-gradient-to-br from-stone-700 to-stone-100'>
+      <div className='flex justify-center items-center '>
+      <img src={logo} className='w-20 bg-black h-15'/>
+      <h1 className='text-3xl font-bold'>ShopShine</h1>
+>>>>>>> f7a469e5b7391d9c7c89314380b17b6091dc2665
     </div>
 
     <div>
@@ -36,7 +43,11 @@ const Footer = () => {
         </ul>
     </div>
 
+<<<<<<< HEAD
     <hr className='border-3px solid-black w-full'/>
+=======
+    <hr className='border-3px solid-black w-300'/>
+>>>>>>> f7a469e5b7391d9c7c89314380b17b6091dc2665
     <p className='text-black'>Copyright @2025 - All Rights Reserved</p>
     </div>
     </>
