@@ -9,7 +9,7 @@ const Releted_product = () => {
 
 <h1 className='text-3xl text-black '>Releted Product <hr className=''/> </h1>
         
-    <div className='w-300 flex flex-wrap h-100  gap-5 justify-center '>
+    <div className='w-full flex flex-wrap h-100  gap-5 justify-center '>
       {data_product.map((item,i)=>{
         return <Item key={i} id={item.id} name={item.name} catogry={item.category} image={item.image} new_price={item.new_price} old_price={item.old_price}/>
       })}

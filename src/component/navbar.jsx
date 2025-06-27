@@ -18,14 +18,14 @@ const Navbar = () => {
    
       <div className='flex items-center gap-5'>
         <img src={logo} className='w-20 bg-black h-15'/>
-        <p className='font-bold'>shopshine</p>
+        <p className='font-bold text-3xl'>Shopshine</p>
      <button className='md:hidden' onClick={()=>(!Setmenu)}>
      {menu?  <IoMenu />:<IoCloseCircle />}
 </button>
       </div>
 
       <div>
-        <ul className={`flex justify-center gap-8 ${menu?"block":"hidden"}`} >
+        <ul className={`flex justify-center md:gap-8 md:text-lg ${menu?"block":"hidden"} `} >
             <li onClick={()=>{Setmenu("home")}} > <Link to={"/shop"}> Home</Link>{menu==="home"?<hr/>:<></>}</li>
             <li onClick={()=>{Setmenu("mens")}}><Link to={"/mens"}> Mens</Link>{menu==="mens"?<hr/>:<></>}</li>
             <li onClick={()=>{Setmenu("women")}}><Link to={"/womens"}> womens</Link>{menu==="women"?<hr/>:<></>}</li>
