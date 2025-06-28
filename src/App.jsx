@@ -12,14 +12,11 @@ import Cart from './component/Pages/cart'
 import manbanner from './assets/banner.jpg'
 import womenbanner from './assets/women_banner.avif'
 import kidsbanner from './assets/kids_banner.jpg'
+import './App.css'
 
 const App = () => {
   return (
-<<<<<<< HEAD
-    <div className='w-full'>
-=======
     <div className=' bg-black h-10 w-10 text-blue-900'>
->>>>>>> f7a469e5b7391d9c7c89314380b17b6091dc2665
       <BrowserRouter>
       <Navbar />
       <Routes>
