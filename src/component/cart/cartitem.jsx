@@ -6,8 +6,8 @@ const Cartitem = () => {
     
     return (
       <>
-    <div className='w-314  flex-col  grid text-black'>
-      <div className=' w-314 flex gap-40 items-center text-xl  p-10 font-bold bg-slate-300 h-20'>
+    <div className='w-full  flex-col  grid text-black'>
+      <div className=' w-full flex gap-40 items-center text-xl  p-10 font-bold bg-slate-300 h-20'>
 <p>Products</p>
 <p>title</p>
 <p>Price</p>
@@ -32,7 +32,7 @@ if (cartItems[e.id]>0) {
      })}
      
     </div>
- <div className='w-314 text-black flex flex-col gap-10 pb-5'>
+ <div className='w-full text-black flex flex-col gap-10 pb-5'>
         <p className='text-3xl font-semibold'>Cart tools</p>
 
         <div className='flex text-lg pb-10'>

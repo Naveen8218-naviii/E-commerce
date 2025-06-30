@@ -3,7 +3,7 @@ import React from 'react'
 const Discription = () => {
   return (
     <>
-    <div className='mt-10  first: w-290 flex flex-col justify-end ml-20 text-black font-semibold'>
+    <div className='mt-10  first: w-full flex flex-col justify-end ml-20 text-black font-semibold'>
       <div className='flex  '>
         <p className='border-1 w-40 h-14 flex justify-center items-center'>Description</p>
         <div className='flex  gap-2 border-1 w-40 flex justify-center items-center'>
@@ -14,7 +14,7 @@ const Discription = () => {
         
 
       </div>
-      <div className='border-1 w-295 h-50 flex justify-center items-center p-8'>
+      <div className='border-1 w-full h-50 flex justify-center items-center p-8'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.    
          Praesentium at corporis nisi ipsam voluptatibus amet in est quae.
           Nisi error assumenda <br /> autem soluta velit animi quasi aperiam saepe in sunt!

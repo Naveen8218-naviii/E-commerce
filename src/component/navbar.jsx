@@ -5,74 +5,55 @@ import {Link} from 'react-router-dom'
 import {Shopcontext} from '../component/shopcontext'
 import logo from '../assets/logo.jpg'
 import { GiShoppingCart } from "react-icons/gi";
-<<<<<<< HEAD
-import { IoMenu } from "react-icons/io5";
-import { IoCloseCircle } from "react-icons/io5";
-
-const Navbar = () => {
-  const[menu,Setmenu]=useState(false)
-  const {getTotalCart}=useContext(Shopcontext)
-  return (
-     <div className=' w-full  h-auto md:h-20 bg-black text-white flex  md:gap-70 items-center cursor-pointer justify-center' >
-
-    
-   
-      <div className='flex items-center md:gap-5'>
-        <img src={logo} className='w-20 bg-black h-15'/>
-        <p className='font-bold md:text-3xl'>Shopshine</p>
-    
-      </div>
-
-      <div>
-        <ul className={`md:flex justify-center md:gap-8 md:text-lg ${menu?"block":"hidden"} `} >
-=======
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   const[menu,Setmenu]=useState("menu")
+  const [open, setOpen] = useState(false)
   const {getTotalCart}=useContext(Shopcontext)
   return (
-    <div className=' w-314 h-20 bg-black text-white flex justify-center gap-70 items-center cursor-pointer ' >
-      <div className='flex items-center gap-5'>
-        <img src={logo} className='w-20 bg-black h-15'/>
-        <p className='font-bold'>shopshine</p>
+    <div className=' w-full md:h-20 h-auto bg-black text-white grid md:flex justify-center md:gap-40 gap-5 items-center cursor-pointer px-4 py-5 ' >
+      <div className='flex items-center gap-6 '>
+        <div className='flex justify-center items-center gap-1'>
+        <img src={logo} className='w-10 bg-black h-8 md:w-15 md:h-10'/>
+        <p className='font-bold text-xl md:text-3xl'>shopshine</p>
+</div>
+               
+                  <div className=' md:hidden flex items-center gap-3'>
+           <Link to={"/login"}> <button className='bg-green-500 w-15 h-8 rounded-lg'> Login</button></Link>
+           <div className='relative'>
+            <p className='absolute -right-2 -top-2 w-4 rounded-full h-3 flex justify-center items-center font-semibold bg-red-500 text-white'> {getTotalCart()}</p> 
+          <Link to={"/cart"}>  <GiShoppingCart className='w-10 bg-black h-10' /></Link>
+          
+            </div>
+       
+      
+      <button onClick={()=>setOpen(!open)} className='md:hidden text-2xl'>
+<FaBars />
+      </button>
+     </div>
       </div>
 
       <div>
-        <ul className='flex justify-center gap-8'>
->>>>>>> f7a469e5b7391d9c7c89314380b17b6091dc2665
+        <ul className={`md:flex md:justify-center grid place-items-center gap-5 ${open?'grid':'hidden'} text-2xl md:text-xl bg-black `}>
             <li onClick={()=>{Setmenu("home")}} > <Link to={"/shop"}> Home</Link>{menu==="home"?<hr/>:<></>}</li>
             <li onClick={()=>{Setmenu("mens")}}><Link to={"/mens"}> Mens</Link>{menu==="mens"?<hr/>:<></>}</li>
             <li onClick={()=>{Setmenu("women")}}><Link to={"/womens"}> womens</Link>{menu==="women"?<hr/>:<></>}</li>
             <li onClick={()=>{Setmenu("kids")}}><Link to={"/kids"}> Kids</Link>{menu==="kids"?<hr/>:<></>}</li>
         </ul>
   </div>
-<<<<<<< HEAD
-        <div className='flex items-center md:gap-10'>
-=======
-        <div className='flex items-center gap-10'>
->>>>>>> f7a469e5b7391d9c7c89314380b17b6091dc2665
+        <div className=' hidden md:flex md:items-center md:gap-10'>
            <Link to={"/login"}> <button className='bg-green-500 w-20 h-10 rounded-lg'> Login</button></Link>
            <div className='relative'>
             <p className='absolute -right-2 -top-2 w-6 rounded-full h-5 flex justify-center items-center font-semibold bg-red-500 text-white'> {getTotalCart()}</p> 
           <Link to={"/cart"}>  <GiShoppingCart className='w-10 bg-black h-10' /></Link>
           
-<<<<<<< HEAD
-         
             </div>
-              <button className='md:hidden ' onClick={()=>Setmenu(!menu)}>
-     {menu?  <IoCloseCircle className='text-2xl'/>:<IoMenu className='text-2xl' />}
-</button>
-=======
-            </div>
->>>>>>> f7a469e5b7391d9c7c89314380b17b6091dc2665
+       
         </div>
 
-     
+   
     </div>
-<<<<<<< HEAD
-    
-=======
->>>>>>> f7a469e5b7391d9c7c89314380b17b6091dc2665
   )
 }
 

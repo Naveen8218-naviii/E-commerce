@@ -12,11 +12,10 @@ import Cart from './component/Pages/cart'
 import manbanner from './assets/banner.jpg'
 import womenbanner from './assets/women_banner.avif'
 import kidsbanner from './assets/kids_banner.jpg'
-import './App.css'
 
 const App = () => {
   return (
-    <div className=' bg-black h-10 w-10 text-blue-900'>
+    <div className='w-full h-auto '>
       <BrowserRouter>
       <Navbar />
       <Routes>
