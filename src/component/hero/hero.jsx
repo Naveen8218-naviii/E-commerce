@@ -7,10 +7,10 @@ const Hero = () => {
   return (
     <div className='bg-gradient-to-t from-inherit to-teal-300 to-lime-100 w-full h-70 md:h-auto flex justify-center  items-center '>
       <div className='flex flex-col gap-4 '>
-        <h1 className='text-black md:text-4xl font-extrabold'>Best deal ! Best prices !</h1>
+        <h1 className='text-black md:text-4xl text-2xl font-extrabold'>Best deal ! Best prices !</h1>
     
       <div>
-          <p className='text-black md:text-xl font-bold'>New</p>
+          <p className='text-black text-xl font-bold'>New</p>
              <img src={img} className='md:w-50 md:h-20 h-5 w-10'/>
       </div>
 <div className='text-xl text-black'>

@@ -10,14 +10,14 @@ const Footer = () => {
   return (
     <>  
     <div className='flex justify-center items-center flex-col w-314 gap-10  h-100 w-full relative bg-gradient-to-br from-stone-700 to-stone-100'>
-      <div className='flex justify-center items-center '>
+      <div className='flex justify-center items-center gap-2'>
       <img src={logo} className='w-20 bg-black h-15'/>
       <h1 className='text-3xl font-bold'>ShopShine</h1>
     </div>
 
     <div>
 
-        <ul className='flex text-gray-700 gap-10 justify-center text-xl'>
+        <ul className='flex text-gray-700 md:gap-10 gap-4 justify-center md:text-xl'>
             <li>About</li>
             <li>Products</li>
             <li>Offices</li>
